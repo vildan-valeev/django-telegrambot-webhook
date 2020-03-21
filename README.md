@@ -1,5 +1,6 @@
 Django TelegramBOT
 
+<<<<<<< HEAD
 python3.6
 1.venv install/activate
 2. pip install -r requirements.txt
@@ -10,3 +11,5 @@ python3.6
     URL =  https://c425ee31.ngrok.io (local)
     URL =  https://user.pythonanywhere.com  (deploy)
 7. 
+=======
+>>>>>>> 7f1efecb50a3eadd02d3d5c02ff6ced50c6baca2
