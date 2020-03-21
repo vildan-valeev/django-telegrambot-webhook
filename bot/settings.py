@@ -25,7 +25,7 @@ SECRET_KEY = '1rc@vro@f71fm6da9jte(b!w-zr2e@j9r^a7h!i*^ax-@q=x#z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vildan.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,10 +121,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# in pythonanywhere
+# STATIC_ROOT = '/home/<login>/<project>/static'
 STATIC_ROOT = '/home/Vildan/bot/static'
 
-# настройки телеграм
-# curl https://api.telegram.org/bot997719198:AAHZmeqiXr9RHOMTjl2CBSnyFwlK9KUK3-E/getWebhookInfo
+"""настройки бота"""
+# Ставим вебхук
+# api.telegram.org/bot997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc/setwebhook?url=https://c425ee31.ngrok.io
+# Проверяем бота
+# curl https://api.telegram.org/bot<KEY>/getWebhookInfo
+TOKEN = '997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc'
 
-TOKEN = '997719198:AAHZmeqiXr9RHOMTjl2CBSnyFwlK9KUK3-E'
-DOMAIN = 'https://vildan.pythonanywhere.com'

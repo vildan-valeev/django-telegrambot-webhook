@@ -5,9 +5,6 @@ from .views import UpdateBot
 
 app_name = 'tg'
 
-
-
 urlpatterns = [
-    path('{}'.format(settings.TOKEN), csrf_exempt(UpdateBot.as_view()), name='update'),
-
+    path('', UpdateBot.as_view(), name='update'),
 ]
