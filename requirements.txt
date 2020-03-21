@@ -1,8 +1,8 @@
-djangorestframework
 asgiref==3.2.5
 certifi==2019.11.28
 chardet==3.0.4
 Django==3.0.4
+djangorestframework==3.11.0
 idna==2.9
 pyTelegramBotAPI==3.6.7
 pytz==2019.3
