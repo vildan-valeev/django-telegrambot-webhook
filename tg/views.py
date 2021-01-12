@@ -14,7 +14,7 @@ class UpdateBot(APIView):
         json_str = request.body.decode('UTF-8')
         update = telebot.types.Update.de_json(json_str)
         bot.process_new_updates([update])
-
+        print(update)
         return Response({'code': 200})
 
 
@@ -22,3 +22,10 @@ class UpdateBot(APIView):
 def start(message):
     # автоответ на команду
     bot.reply_to(message, 'Hello, ' + message.from_user.first_name)
+
+
+# # обработчик будет вызван при команде /voice
+# @dp.message_handler(commands=['voice'])
+# async def process_voice_command(message: types.Message):
+#     text = "Чо надо?"
+#     await message.answer(text=text)

@@ -1,6 +1,6 @@
 Django TelegramBOT
 
-Учебно-тренировочный телеграм бот на Python, фрейворке Django, база SQLite3, библиотека pyTelegramBotAPI, чай с лимоном, бутер с колбасой и сыром
+Телеграм бот на Python, фрейворке Django, база SQLite3, библиотека pyTelegramBotAPI
 
 python3.6
 
