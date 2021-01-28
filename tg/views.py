@@ -21,7 +21,7 @@ class UpdateBot(APIView):
 @bot.message_handler(commands=['start'])
 def start(message):
     # автоответ на команду
-    bot.reply_to(message, 'Hello, ' + message.from_user.first_name)
+    bot.reply_to(message, f'Привет, ' + message.from_user.first_name + ' это сообщение из джанго проекта.')
 
 
 # # обработчик будет вызван при команде /voice

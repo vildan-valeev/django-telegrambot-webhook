@@ -128,10 +128,10 @@ STATIC_ROOT = '/home/Vildan/bot/static'
 
 """настройки бота"""
 # Ставим вебхук
-# api.telegram.org/bot997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc/setwebhook?url=https://ca42d451.ngrok.io
-# http://api.telegram.org/bot997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc/setwebhook?url=https://vildan.pythonanywhere.com/
+# api.telegram.org/bot997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc/setwebhook?url=https://d7687b0d39c0.ngrok.io
+# http://api.telegram.org/bot1577812306:AAESS6a5ge3-sDkaKSz8VgJz2g_I8LeTzSE/setwebhook?url=https://1703eed8a2bb.ngrok.io
 
 # Проверяем бота
 # curl https://api.telegram.org/bot997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc/getWebhookInfo
-TOKEN = '997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc'
+TOKEN = '1577812306:AAESS6a5ge3-sDkaKSz8VgJz2g_I8LeTzSE'
 
