@@ -1,6 +1,7 @@
 __author__ = '@vildan_valeev'
 
 import telebot
+from rest_framework.generics import CreateAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 # from bot.settings import TOKEN
@@ -8,14 +9,19 @@ from rest_framework.response import Response
 # bot = telebot.TeleBot(TOKEN)
 
 
-class UpdateBot(APIView):
-    def post(self, request):
-
+class UpdateBot(CreateAPIView):
+    def post(self, request, *args, **kwargs):
+        # bot_id = kwargs.get('hook_id', None)
         # Сюда должны получать сообщения от телеграм и далее обрабатываться ботом
         json_str = request.body.decode('UTF-8')
         update = telebot.types.Update.de_json(json_str)
         # bot.process_new_updates([update])
-        print(update)
+        print(f'{args}')
+        print(f'{kwargs}')
+        print(f'{json_str=}')
+        print(f'{update=}')
+        print(f'{request.data=}')
+        print(f'{request.path=}')
         return Response({'code': 200})
 
 
