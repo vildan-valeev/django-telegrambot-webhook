@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'tg',
+    'tg.apps.TgConfig',
     'rest_framework',
 ]
 
@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 # STATIC_ROOT = '/home/<login>/<project>/static'
 STATIC_ROOT = '/home/Vildan/bot/static'
 
-DOMAIN = ''
+DOMAIN = 'https://85d28d21d020.ngrok.io'
 """настройки бота"""
 # Ставим вебхук
 # api.telegram.org/bot997719198:AAEi_fXpSJEhni6Lpsc5O1Q7abl5sBE7JXc/setwebhook?url=https://d7687b0d39c0.ngrok.io

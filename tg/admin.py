@@ -5,8 +5,8 @@ admin.site.register(User)
 
 
 class TelegramTokenAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'token',)
-    list_display_links = ('id', 'user', 'token',)
+    list_display = ('id', 'token',)
+    list_display_links = ('id', 'token',)
 
 
 admin.site.register(TelegramToken, TelegramTokenAdmin)

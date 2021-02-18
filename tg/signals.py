@@ -11,7 +11,7 @@ def setWebhook(sender, instance, created, **kwargs):
     print('setWebhook')
     print(instance.id, instance.title, instance.tg_token)
     if created:
-        url = f"http://api.telegram.org/bot{instance.tg_token}/setwebhook?url={DOMAIN}"
+        url = f"http://api.telegram.org/bot{instance.tg_token}/setwebhook?url={DOMAIN}/webhook/{instance.tg_token}/"
         print(url)
         payload = {}
         headers = {}
@@ -25,7 +25,7 @@ def setWebhook(sender, instance, created, **kwargs):
 def updateWebhook(sender, instance, created, **kwargs):
     print('updateWebhook')
     if created == False:
-        url = f"http://api.telegram.org/bot{instance.tg_token}/setwebhook?url={DOMAIN}"
+        url = f"http://api.telegram.org/bot{instance.tg_token}/setwebhook?url={DOMAIN}/webhook/{instance.tg_token}/"
         payload = {}
         headers = {}
         response = requests.request("GET", url, headers=headers, data=payload)

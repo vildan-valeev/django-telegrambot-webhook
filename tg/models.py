@@ -10,7 +10,6 @@ class User(models.Model):
 
 
 class TelegramToken(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     token = models.CharField(max_length=440, null=True)
 
     def __str__(self):
