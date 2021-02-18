@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import UpdateBot
+from .views import GetUpdates
 
 app_name = 'tg'
 
 
 urlpatterns = [
-    path('<hook_id>/', UpdateBot.as_view(), name='update'),
+    path('<webhook>/', GetUpdates.as_view(), name='update'),
 ]
