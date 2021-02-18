@@ -1,12 +1,6 @@
-__author__ = '@vildan_valeev'
-
-import requests
 import telebot
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
-
-# from bot.settings import TOKEN
-TOKEN = None
 
 
 class GetUpdates(CreateAPIView):
