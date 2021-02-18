@@ -7,3 +7,21 @@ class User(models.Model):
 
     def __str__(self):
         return self.user_id
+
+
+class TelegramToken(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
+    token = models.CharField(max_length=440, null=True)
+
+    def __str__(self):
+        return self.token
+
+
+class TelegramBot(models.Model):
+    title = models.CharField(max_length=440)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    dialog = models.CharField(max_length=440, null=True)
+    tg_token = models.ForeignKey(TelegramToken, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.title
