@@ -27,7 +27,7 @@ def delete_webhook(sender, instance, **kwargs):
 
 
 def getinfo_webhook():
-    bot_token = '1577812306:AAESS6a5ge3-sDkaKSz8VgJz2g_I8LeTzSE'
+    bot_token = ''
     url = f"https://api.telegram.org/bot{bot_token}/getWebhookInfo"
     response = requests.request("GET", url, )
     print(response.text)
